@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane id="AnchorPane" prefHeight="419.0" prefWidth="654.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cajerodevaleria.FXMLDocumentController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <GridPane prefHeight="423.0" prefWidth="657.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextField fx:id="Nombre" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#CampoNombre" promptText="Nombre" />
+            <TextField fx:id="Numero" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#CampoNumero" promptText="Nümero de cuenta" GridPane.rowIndex="2" />
+            <TextField fx:id="saldo" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#CampoSaldo" promptText="Saldo Inicial" GridPane.rowIndex="4" />
+            <Button fx:id="btnRetirar" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnRetirar" text="RETIRAR" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <Button fx:id="IntroduceNum" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnIntroduceNum" text="Introduce num Cuenta" GridPane.rowIndex="3" />
+            <Button fx:id="IntroduceSaldo" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnIntroduceSaldo" text="Introduce saldo inicial" GridPane.rowIndex="5" />
+            <Button fx:id="IntroduceCuenta" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnIntroduceCuenta" text="Introduce Cuenta" GridPane.rowIndex="6" />
+            <TextField text="Saldo Actual:" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <TextField text="Cantidad" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <TextField fx:id="cantidad" onAction="#operarCantidad" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Button fx:id="btnIngresar" mnemonicParsing="false" onAction="#btnIngresar" prefHeight="32.0" prefWidth="251.0" text="INGRESAR" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <TextField text="Numero de cuenta" GridPane.columnIndex="2" />
+            <TextField fx:id="cuentaTrabajo" GridPane.columnIndex="3" />
+            <Button fx:id="IntroduceNombre" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnIntroduceNombre" text="Introduce Nombre" GridPane.rowIndex="1" />
+            <TextField fx:id="saldoActual" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+    </children>
+</AnchorPane>
